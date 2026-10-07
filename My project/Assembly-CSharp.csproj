@@ -61,7 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ControlPlayer.cs" />
-    <Compile Include="Assets\Scripts\ObjetoInteractuable.cs" />
     <Compile Include="Assets\Scripts\ControlCamara.cs" />
     <Compile Include="Assets\Scripts\PlayerInteraction.cs" />
   </ItemGroup>
