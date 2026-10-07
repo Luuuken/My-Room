@@ -288,7 +288,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &177988295
 Transform:
@@ -299,7 +299,7 @@ Transform:
   m_GameObject: {fileID: 177988294}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 96.98, y: -2.63, z: -63.67}
+  m_LocalPosition: {x: 96.98, y: -2.503, z: -63.549}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -380,6 +380,10 @@ PrefabInstance:
     - target: {fileID: 7675439704634878755, guid: bbe445e14495814438965b5b923d26eb, type: 3}
       propertyPath: m_Name
       value: Tv-clon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675439704634878755, guid: bbe445e14495814438965b5b923d26eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8179768165725588214, guid: bbe445e14495814438965b5b923d26eb, type: 3}
       propertyPath: m_Enabled
@@ -1169,13 +1173,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100608936}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 89.71, y: -3.84, z: -69.74}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 90.169, y: -2.929, z: -69.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2010391992}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &1241725063 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 742748825008473799, guid: ffb950aa8f20a754d918cbf2dd6a0e6f, type: 3}
@@ -1256,6 +1260,10 @@ PrefabInstance:
     - target: {fileID: 7675439704634878755, guid: bbe445e14495814438965b5b923d26eb, type: 3}
       propertyPath: m_Name
       value: Tv
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675439704634878755, guid: bbe445e14495814438965b5b923d26eb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7675439704634878755, guid: bbe445e14495814438965b5b923d26eb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1777,12 +1785,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 963194227}
-  interactionDistance: 3
+  interactionDistance: 5
   mirrorPosition: {fileID: 444835148}
-  tv: {fileID: 0}
+  tv: {fileID: 177988295}
   tvPosition: {fileID: 177988295}
   furniturePosition: {fileID: 1100608937}
-  bedPosition: {fileID: 1516364082}
+  bedPosition: {fileID: 0}
 --- !u!1 &1661431271
 GameObject:
   m_ObjectHideFlags: 0
