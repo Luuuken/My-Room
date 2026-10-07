@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float interactionDistance = 3f;
     [SerializeField] private Transform mirrorPosition;
-    [SerializeField] private Transform bedPosition;
+    [SerializeField] private Transform TVPosition;
     void Update()
     {
         RaycastHit hit;
@@ -27,12 +28,19 @@ public class PlayerInteraction : MonoBehaviour
 
     void Interactuar(GameObject objeto)
     {
-        Debug.Log("Interactuando con: " + objeto.name);
+    
+         Debug.Log("Interactuando con: " + objeto.name); 
 
         if (objeto.name == "Mirror")
         {
-            objeto.transform.position = mirrorPosition.position;
-            objeto.transform.rotation = mirrorPosition.rotation;
+              objeto.transform.position = mirrorPosition.position;
+              objeto.transform.rotation = mirrorPosition.rotation;
+        }
+
+        if (objeto.name == "TV")
+        {
+            objeto.transform.position = TVPosition.position;
+            objeto.transform.rotation = TVPosition.rotation;
         }
 
     }
