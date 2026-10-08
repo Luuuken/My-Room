@@ -121,16 +121,5 @@ public class PlayerInteraction : MonoBehaviour
            objeto.transform.rotation = Table2Position.rotation;
         }
 
-        GameManager gameManager = FindObjectOfType<GameManager>();
-
-        if (gameManager != null)
-        {
-            gameManager.ObjetoOrdenado(objeto.name);
-        }
-        else
-        {
-            Debug.LogError("NO SE ENCONTRO EL GAMEMANAGER");
-        }
-
     }
 }
