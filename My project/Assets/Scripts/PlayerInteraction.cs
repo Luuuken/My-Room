@@ -4,13 +4,16 @@ public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float interactionDistance = 3f;
-
     [SerializeField] private Transform mirrorPosition;
     [SerializeField] private Transform tvPosition;
     [SerializeField] private Transform Desk1Position;
     [SerializeField] private Transform Desk2Position;
     [SerializeField] private Transform ACPosition;
+    [SerializeField] private Transform TabletvPosition;
+    [SerializeField] private Transform BedPosition;
+    [SerializeField] private Transform ClosetPosition;
     [SerializeField] private Transform TablePosition;
+    [SerializeField] private Transform Table2Position;
 
     void Update()
     {
@@ -70,8 +73,32 @@ public class PlayerInteraction : MonoBehaviour
 
         if (objeto.name == "TV Table")
         {
-            objeto.transform.position = TablePosition.position;
-            objeto.transform.rotation = TablePosition.rotation;
+            objeto.transform.position = TabletvPosition.position;
+            objeto.transform.rotation = TabletvPosition.rotation;
+        }
+
+        if (objeto.name == "Bed")
+        {
+            objeto.transform.position = BedPosition.position;
+            objeto.transform.rotation = BedPosition.rotation;
+        }
+
+        if (objeto.name == "Closet")
+        {
+           objeto.transform.position = ClosetPosition.position;
+           objeto.transform.rotation = ClosetPosition.rotation;
+        }
+
+        if (objeto.name == "Table")
+        {
+           objeto.transform.position = TablePosition.position;
+           objeto.transform.rotation = TablePosition.rotation;
+        }
+
+        if (objeto.name == "Table2")
+        {
+           objeto.transform.position = Table2Position.position;
+           objeto.transform.rotation = Table2Position.rotation;
         }
 
     }
