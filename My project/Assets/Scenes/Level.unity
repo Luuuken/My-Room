@@ -298,7 +298,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5751243966472568706, guid: 17cdf33a1a8358d46b4e2f3a4e4e882f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1813068430}
   m_SourcePrefab: {fileID: 100100000, guid: 17cdf33a1a8358d46b4e2f3a4e4e882f, type: 3}
 --- !u!1001 &100249300
 PrefabInstance:
@@ -395,6 +398,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8986641337573216207, guid: 016ee2c3807595d44a095fd243779117, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1650452507}
+    - targetCorrespondingSourceObject: {fileID: 8986641337573216207, guid: 016ee2c3807595d44a095fd243779117, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1650452509}
   m_SourcePrefab: {fileID: 100100000, guid: 016ee2c3807595d44a095fd243779117, type: 3}
 --- !u!4 &102757508 stripped
 Transform:
@@ -637,7 +643,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 73489924380712061, guid: ffb950aa8f20a754d918cbf2dd6a0e6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1477252835}
   m_SourcePrefab: {fileID: 100100000, guid: ffb950aa8f20a754d918cbf2dd6a0e6f, type: 3}
 --- !u!4 &354344612 stripped
 Transform:
@@ -1073,7 +1082,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5751243966472568706, guid: 17cdf33a1a8358d46b4e2f3a4e4e882f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1244439823}
   m_SourcePrefab: {fileID: 100100000, guid: 17cdf33a1a8358d46b4e2f3a4e4e882f, type: 3}
 --- !u!1 &759260832 stripped
 GameObject:
@@ -1292,6 +1304,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1661431272}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 90}
+--- !u!1 &946173349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 946173351}
+  - component: {fileID: 946173350}
+  m_Layer: 0
+  m_Name: Salir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &946173350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946173349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fdf43eb38ea04d48aaed8c45db033b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &946173351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946173349}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 134.21909, y: 465.21072, z: -135.68112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,6 +1541,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6024977, y: 0.6376695, z: 0.51979154}
   m_Center: {x: 0.0009997746, y: 0.31292105, z: 0.0066116997}
+--- !u!114 &1003400410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48986532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba63a6d4f9909ed4b84d7c935baea830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: No entiendo nada..
+  dialogueAfter: Ahi esta
 --- !u!4 &1044872411 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8731761645318725003, guid: 433650bb6c70fe14f9b80d5fc0424df8, type: 3}
@@ -1511,6 +1581,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.49097568, y: 0.6126607, z: 0.56103426}
   m_Center: {x: -0.014367552, y: 0.29855838, z: 0.012828575}
+--- !u!114 &1044872415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759260832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba63a6d4f9909ed4b84d7c935baea830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: como se mantiene ahi?
+  dialogueAfter: bien ya esta
 --- !u!1 &1060961851 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5773750746739546590, guid: ad660f42ca887414f8b2c8972bc26478, type: 3}
@@ -1557,6 +1641,25 @@ Transform:
   - {fileID: 1363427600}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1079601221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2445558219769071788, guid: 1f82144bf4c7f3b43bb15afd591aca2e, type: 3}
+  m_PrefabInstance: {fileID: 1944596986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1079601225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079601221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba63a6d4f9909ed4b84d7c935baea830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 'El espejo no tendria que estar ahi '
+  dialogueAfter: 'Ahora si '
 --- !u!1 &1079665043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,6 +1727,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 742748825008473799, guid: ffb950aa8f20a754d918cbf2dd6a0e6f, type: 3}
   m_PrefabInstance: {fileID: 311633127}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1244439819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5751243966472568706, guid: 17cdf33a1a8358d46b4e2f3a4e4e882f, type: 3}
+  m_PrefabInstance: {fileID: 733920431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1244439823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244439819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba63a6d4f9909ed4b84d7c935baea830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: esto no estaba en la pared?
+  dialogueAfter: espero que no se caiga despues.
 --- !u!1 &1335400676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,7 +1864,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7675439704634878755, guid: bbe445e14495814438965b5b923d26eb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2065354893}
   m_SourcePrefab: {fileID: 100100000, guid: bbe445e14495814438965b5b923d26eb, type: 3}
 --- !u!1001 &1352018910
 PrefabInstance:
@@ -1810,7 +1935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6587547008985121636, guid: ad660f42ca887414f8b2c8972bc26478, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 94.56
+      value: 92.259
       objectReference: {fileID: 0}
     - target: {fileID: 6587547008985121636, guid: ad660f42ca887414f8b2c8972bc26478, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1818,7 +1943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6587547008985121636, guid: ad660f42ca887414f8b2c8972bc26478, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -70.74
+      value: -68.99
       objectReference: {fileID: 0}
     - target: {fileID: 6587547008985121636, guid: ad660f42ca887414f8b2c8972bc26478, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1863,6 +1988,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5773750746739546590, guid: ad660f42ca887414f8b2c8972bc26478, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1377974381}
+    - targetCorrespondingSourceObject: {fileID: 5773750746739546590, guid: ad660f42ca887414f8b2c8972bc26478, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1377974383}
   m_SourcePrefab: {fileID: 100100000, guid: ad660f42ca887414f8b2c8972bc26478, type: 3}
 --- !u!1 &1363427599
 GameObject:
@@ -1921,6 +2049,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.80508554, y: 0.7657399, z: 2.2811544}
   m_Center: {x: -0.014199061, y: 0.3631992, z: -0.026864856}
+--- !u!114 &1377974383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060961851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba63a6d4f9909ed4b84d7c935baea830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: .....
+  dialogueAfter: no lo senti tan pesado
 --- !u!1 &1463935098
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,6 +2169,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1661431272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &1477252831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 73489924380712061, guid: ffb950aa8f20a754d918cbf2dd6a0e6f, type: 3}
+  m_PrefabInstance: {fileID: 311633127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1477252835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477252831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba63a6d4f9909ed4b84d7c935baea830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: Como es posible esto...
+  dialogueAfter: Espero que ande.
 --- !u!1001 &1533064458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2098,7 +2259,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7182297672045847925, guid: 129e9835bc0e2e84faf2ef68c431897b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1623179666}
   m_SourcePrefab: {fileID: 100100000, guid: 129e9835bc0e2e84faf2ef68c431897b, type: 3}
 --- !u!1001 &1538928753
 PrefabInstance:
@@ -2207,7 +2371,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8243454669039994673, guid: 433650bb6c70fe14f9b80d5fc0424df8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1044872413}
+    - targetCorrespondingSourceObject: {fileID: 8243454669039994673, guid: 433650bb6c70fe14f9b80d5fc0424df8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1044872415}
   m_SourcePrefab: {fileID: 100100000, guid: 433650bb6c70fe14f9b80d5fc0424df8, type: 3}
+--- !u!1 &1596731965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5751243966472568706, guid: 17cdf33a1a8358d46b4e2f3a4e4e882f, type: 3}
+  m_PrefabInstance: {fileID: 89996816}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1613475959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2223,6 +2395,7 @@ GameObject:
   - component: {fileID: 1613475961}
   - component: {fileID: 1613475960}
   - component: {fileID: 1613475966}
+  - component: {fileID: 1613475967}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2370,7 +2543,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 963194227}
-  interactionDistance: 5
+  interactionDistance: 3
+  dialogueManager: {fileID: 1701218908}
   mirrorPosition: {fileID: 444835148}
   tvPosition: {fileID: 177988295}
   Desk1Position: {fileID: 1100608937}
@@ -2381,6 +2555,38 @@ MonoBehaviour:
   ClosetPosition: {fileID: 1363427600}
   TablePosition: {fileID: 35409504}
   Table2Position: {fileID: 1335400677}
+--- !u!114 &1613475967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613475959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106a34e09245ce646b7b7109ba645306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 163742273}
+--- !u!1 &1623179662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7182297672045847925, guid: 129e9835bc0e2e84faf2ef68c431897b, type: 3}
+  m_PrefabInstance: {fileID: 1533064458}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1623179666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623179662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba63a6d4f9909ed4b84d7c935baea830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: como no se cayo...
+  dialogueAfter: ahora quedate ahi.
 --- !u!1 &1646168221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2438,6 +2644,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.645525, y: 0.56733215, z: 2.6621494}
   m_Center: {x: 0.026440144, y: 0.21633393, z: 0.055073738}
+--- !u!114 &1650452509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650452505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba63a6d4f9909ed4b84d7c935baea830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: "Esto es muy extra\xF1o"
+  dialogueAfter: ahora si puedo dormir
 --- !u!1 &1661431271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2475,6 +2695,11 @@ Transform:
   - {fileID: 1463935102}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1671107178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675439704634878755, guid: bbe445e14495814438965b5b923d26eb, type: 3}
+  m_PrefabInstance: {fileID: 1342538378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1701218907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2513,8 +2738,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701218907}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 861.54846, y: 72.6713, z: -518.24396}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 861.5484, y: 72.671295, z: -518.24396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2574,6 +2799,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943638775583794488, guid: 17cdf33a1a8358d46b4e2f3a4e4e882f, type: 3}
   m_PrefabInstance: {fileID: 89996816}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1813068430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596731965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba63a6d4f9909ed4b84d7c935baea830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: como termino asi??
+  dialogueAfter: "perfecto \n"
+--- !u!1 &1827636205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1827636207}
+  - component: {fileID: 1827636206}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1827636206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827636205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba309ca366bee249a39324846e447f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetosNecesarios: 10
+  panelFinal: {fileID: 0}
+--- !u!4 &1827636207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827636205}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 462.07315, y: 260.94333, z: 13.687134}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1937624364
 GameObject:
   m_ObjectHideFlags: 0
@@ -2841,7 +3126,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2445558219769071788, guid: 1f82144bf4c7f3b43bb15afd591aca2e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1079601225}
   m_SourcePrefab: {fileID: 100100000, guid: 1f82144bf4c7f3b43bb15afd591aca2e, type: 3}
 --- !u!1001 &1960235569
 PrefabInstance:
@@ -2950,6 +3238,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8243454669039994673, guid: 433650bb6c70fe14f9b80d5fc0424df8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1003400408}
+    - targetCorrespondingSourceObject: {fileID: 8243454669039994673, guid: 433650bb6c70fe14f9b80d5fc0424df8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1003400410}
   m_SourcePrefab: {fileID: 100100000, guid: 433650bb6c70fe14f9b80d5fc0424df8, type: 3}
 --- !u!1 &1995335928
 GameObject:
@@ -3088,6 +3379,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7047978464531493273, guid: bbe445e14495814438965b5b923d26eb, type: 3}
   m_PrefabInstance: {fileID: 1342538378}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2065354893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671107178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba63a6d4f9909ed4b84d7c935baea830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: Espero que no este rota
+  dialogueAfter: Listo, despues vere si anda
 --- !u!1 &2104292599
 GameObject:
   m_ObjectHideFlags: 0
@@ -3199,6 +3504,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 705507995}
+  - {fileID: 1701218909}
   - {fileID: 1789848435}
   - {fileID: 1613475965}
   - {fileID: 1661431272}
@@ -3206,4 +3512,5 @@ SceneRoots:
   - {fileID: 1072029369}
   - {fileID: 1939992591}
   - {fileID: 64034912}
-  - {fileID: 1701218909}
+  - {fileID: 1827636207}
+  - {fileID: 946173351}

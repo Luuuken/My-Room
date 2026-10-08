@@ -4,6 +4,7 @@ public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float interactionDistance = 3f;
+    [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private Transform mirrorPosition;
     [SerializeField] private Transform tvPosition;
     [SerializeField] private Transform Desk1Position;
@@ -27,9 +28,31 @@ public class PlayerInteraction : MonoBehaviour
         {
             Debug.Log("Estoy mirando: " + hit.collider.gameObject.name);
 
+            DialogueTrigger dialogue = hit.collider.GetComponent<DialogueTrigger>();
+
+            if (dialogue != null)
+            {
+                string texto = dialogue.GetDialogue();
+
+                if (!string.IsNullOrEmpty(texto))
+                {
+                    dialogueManager.MostrarDialogo(texto);
+                }
+            }
+
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Interactuar(hit.collider.gameObject);
+
+                if (dialogue != null)
+                {
+                    dialogue.MarcarComoAcomodado();
+
+                    dialogueManager.MostrarDialogoTemporal(
+                        dialogue.GetDialogueAfter(),
+                        3f
+                    );
+                }
             }
         }
     }
@@ -38,14 +61,12 @@ public class PlayerInteraction : MonoBehaviour
     {
         Debug.Log("Interacción con: " + objeto.name);
 
-        // ESPEJO
         if (objeto.name == "Mirror")
         {
             objeto.transform.position = mirrorPosition.position;
             objeto.transform.rotation = mirrorPosition.rotation;
         }
 
-        // MUEBLE
         if (objeto.name == "Desk1")
         {
             objeto.transform.position = Desk1Position.position;
@@ -58,7 +79,6 @@ public class PlayerInteraction : MonoBehaviour
             objeto.transform.rotation = Desk2Position.rotation;
         }
 
-        // TELEVISOR
         if (objeto.name == "Tv")
         {
             objeto.transform.position = tvPosition.position;
@@ -99,6 +119,17 @@ public class PlayerInteraction : MonoBehaviour
         {
            objeto.transform.position = Table2Position.position;
            objeto.transform.rotation = Table2Position.rotation;
+        }
+
+        GameManager gameManager = FindObjectOfType<GameManager>();
+
+        if (gameManager != null)
+        {
+            gameManager.ObjetoOrdenado(objeto.name);
+        }
+        else
+        {
+            Debug.LogError("NO SE ENCONTRO EL GAMEMANAGER");
         }
 
     }

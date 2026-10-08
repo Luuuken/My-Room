@@ -1,6 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 public class MenuManager : MonoBehaviour
 {
     public void Jugar()
@@ -10,6 +14,10 @@ public class MenuManager : MonoBehaviour
 
     public void Salir()
     {
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 }
