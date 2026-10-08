@@ -1,15 +1,17 @@
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float interactionDistance = 3f;
+
     [SerializeField] private Transform mirrorPosition;
-    [SerializeField] private Transform tv;
     [SerializeField] private Transform tvPosition;
-    [SerializeField] private Transform furniturePosition;
-    [SerializeField] private Transform bedPosition;
+    [SerializeField] private Transform Desk1Position;
+    [SerializeField] private Transform Desk2Position;
+    [SerializeField] private Transform ACPosition;
+    [SerializeField] private Transform TablePosition;
+
     void Update()
     {
         RaycastHit hit;
@@ -33,30 +35,44 @@ public class PlayerInteraction : MonoBehaviour
     {
         Debug.Log("Interacción con: " + objeto.name);
 
+        // ESPEJO
         if (objeto.name == "Mirror")
         {
             objeto.transform.position = mirrorPosition.position;
             objeto.transform.rotation = mirrorPosition.rotation;
         }
 
-        if (objeto.name == "Furniture1")
+        // MUEBLE
+        if (objeto.name == "Desk1")
         {
-            objeto.transform.position = furniturePosition.position;
-            objeto.transform.rotation = furniturePosition.rotation;
+            objeto.transform.position = Desk1Position.position;
+            objeto.transform.rotation = Desk1Position.rotation;
         }
 
-        if (objeto.name == "TV")
+        if (objeto.name == "Desk2")
         {
-            tv.SetPositionAndRotation(
-                tvPosition.position,
-                tvPosition.rotation
-            );
+            objeto.transform.position = Desk2Position.position;
+            objeto.transform.rotation = Desk2Position.rotation;
         }
 
-        if (objeto.name == "Bed")
+        // TELEVISOR
+        if (objeto.name == "Tv")
         {
-            objeto.transform.position = bedPosition.position;
-            objeto.transform.rotation = bedPosition.rotation;
+            objeto.transform.position = tvPosition.position;
+            objeto.transform.rotation = tvPosition.rotation;
         }
+
+        if (objeto.name == "AC")
+        {
+            objeto.transform.position = ACPosition.position;
+            objeto.transform.rotation = ACPosition.rotation;
+        }
+
+        if (objeto.name == "TV Table")
+        {
+            objeto.transform.position = TablePosition.position;
+            objeto.transform.rotation = TablePosition.rotation;
+        }
+
     }
 }
